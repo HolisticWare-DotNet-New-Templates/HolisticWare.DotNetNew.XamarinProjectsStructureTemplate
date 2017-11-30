@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>HolisticWare.DotNetNew.XamarinProjectsStructureTemplate.CSharp</id>
+    <version>0.0.1</version>
+    <description>
+      Creates folder structure/layout for Xamarin cross-platform libraries and bindings
+    </description>
+    <authors>Miljenko Cvjetko moljac Xamarin / HolisticWare</authors>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+  </metadata>
+</package>
