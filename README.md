@@ -162,3 +162,13 @@ Output:
         │       └── project.assets.json
         ├── Demo.Source.sln
         └── Demo.Source.userprefs
+
+
+## `dotnet new` templating links/references
+
+*   https://github.com/dotnet/templating/wiki/Available-templates-for-dotnet-new
+*   http://dotnetnew.azurewebsites.net/
+*   https://docs.microsoft.com/en-us/dotnet/core/tools/custom-templates
+*   https://pioneercode.com/post/how-to-create-a-dot-net-new-project-template-in-dot-net-core
+*   https://rehansaeed.com/custom-project-templates-using-dotnet-new/
+*   https://github.com/aspnet/templating/blob/dev/src/Microsoft.AspNetCore.SpaTemplates/content/Aurelia-CSharp/.template.config/template.json
