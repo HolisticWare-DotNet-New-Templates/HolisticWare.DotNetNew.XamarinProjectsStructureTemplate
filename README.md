@@ -10,8 +10,8 @@ HolisticWare.DotNetNew.XamarinProjectsStructureTemplate
     
 
     nuget push \
-        HolisticWare.DotNetNew.XamarinProjectsStructureTemplate.CSharp.2017.11.30.nupkg \
-        -Source https://www.nuget.org/api/v2/package
+        -Source https://www.nuget.org/api/v2/package \
+        HolisticWare.DotNetNew.XamarinProjectsStructureTemplate.CSharp.2017.12.2.2.nupkg
 
 ## Installation
 

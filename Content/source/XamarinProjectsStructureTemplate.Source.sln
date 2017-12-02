@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.Bindings.XamarinAndroid", "XamarinProjectsStructureTemplate.Bindings.XamarinAndroid\XamarinProjectsStructureTemplate.Bindings.XamarinAndroid.csproj", "{837AE01F-CBB8-4B5A-8766-361787779B9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.Bindings.NetStandard10", "XamarinProjectsStructureTemplate.Bindings.NetStandard10\XamarinProjectsStructureTemplate.Bindings.NetStandard10.csproj", "{191CD6CA-E422-42A7-AD04-F3E731A9F553}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.XamarinIOS", "XamarinProjectsStructureTemplate.XamarinIOS\XamarinProjectsStructureTemplate.XamarinIOS.csproj", "{0FA4E7C0-318F-4515-AFA4-613FF3A296CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.XamarinAndroid", "XamarinProjectsStructureTemplate.XamarinAndroid\XamarinProjectsStructureTemplate.XamarinAndroid.csproj", "{BF701D87-B10A-40DB-B5FE-B4DA1B67139C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,5 +33,17 @@ Global
 		{837AE01F-CBB8-4B5A-8766-361787779B9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{837AE01F-CBB8-4B5A-8766-361787779B9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{837AE01F-CBB8-4B5A-8766-361787779B9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{191CD6CA-E422-42A7-AD04-F3E731A9F553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{191CD6CA-E422-42A7-AD04-F3E731A9F553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{191CD6CA-E422-42A7-AD04-F3E731A9F553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{191CD6CA-E422-42A7-AD04-F3E731A9F553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FA4E7C0-318F-4515-AFA4-613FF3A296CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FA4E7C0-318F-4515-AFA4-613FF3A296CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FA4E7C0-318F-4515-AFA4-613FF3A296CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FA4E7C0-318F-4515-AFA4-613FF3A296CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF701D87-B10A-40DB-B5FE-B4DA1B67139C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF701D87-B10A-40DB-B5FE-B4DA1B67139C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF701D87-B10A-40DB-B5FE-B4DA1B67139C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF701D87-B10A-40DB-B5FE-B4DA1B67139C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

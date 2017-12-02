@@ -6,8 +6,8 @@
     <ProjectGuid>{86A43EF1-6DF4-48D7-930B-B7590F46113A}</ProjectGuid>
     <ProjectTypeGuids>{8FFB629D-F513-41CE-95D2-7ECE97B6EEEC};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>XamarinProjectsStructureTemplate.Bindings.XamarinIOS</RootNamespace>
-    <AssemblyName>XamarinProjectsStructureTemplate.Bindings.XamarinIOS</AssemblyName>
+    <RootNamespace>XamarinProjectsStructureTemplate.Bindings</RootNamespace>
+    <AssemblyName>XamarinProjectsStructureTemplate.Bindings</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
