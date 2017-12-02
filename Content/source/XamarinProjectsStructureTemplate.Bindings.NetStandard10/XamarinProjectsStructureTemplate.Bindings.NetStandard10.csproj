@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.0</TargetFramework>
+    <RootNamespace>XamarinProjectsStructureTemplate.Bindings</RootNamespace>
+    <AssemblyName>XamarinProjectsStructureTemplate.Bindings</AssemblyName>
+  </PropertyGroup>
+
+</Project>
