@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>HolisticWare.DotNetNew.XamarinProjectsStructureTemplate.CSharp</id>
-    <version>2017.12.02.02</version>
+    <version>2017.12.03</version>
     <description>
       Creates folder structure/layout for Xamarin cross-platform libraries and bindings
     </description>
