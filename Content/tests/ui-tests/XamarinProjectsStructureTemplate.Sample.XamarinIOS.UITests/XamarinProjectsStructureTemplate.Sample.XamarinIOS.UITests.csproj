@@ -37,14 +37,6 @@
     <Compile Include="Tests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\samples\XamarinProjectsStructureTemplate.Sample.XamarinIOS\XamarinProjectsStructureTemplate.Sample.XamarinIOS.csproj">
-      <Project>{0F0ACEAE-5373-49FA-9F65-17FA4A0AABA5}</Project>
-      <Name>XamarinProjectsStructureTemplate.Sample.XamarinIOS</Name>
-      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
-      <Private>False</Private>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
