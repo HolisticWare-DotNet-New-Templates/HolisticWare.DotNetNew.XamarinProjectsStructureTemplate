@@ -41,5 +41,6 @@
   <ItemGroup>
     <ObjcBindingCoreSource Include="Structs.cs" />
   </ItemGroup>
+  <Import Project="..\XamarinProjectsStructureTemplate.Common.Shared\XamarinProjectsStructureTemplate.Common.Shared.projitems" Label="Shared" Condition="Exists('..\XamarinProjectsStructureTemplate.Common.Shared\XamarinProjectsStructureTemplate.Common.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
 </Project>

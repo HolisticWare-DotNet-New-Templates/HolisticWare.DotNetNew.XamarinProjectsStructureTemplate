@@ -4,6 +4,8 @@
     <TargetFramework>netstandard1.0</TargetFramework>
     <RootNamespace>XamarinProjectsStructureTemplate</RootNamespace>
     <AssemblyName>XamarinProjectsStructureTemplate</AssemblyName>
+    <DefaultItemExcludes>$(DefaultItemExcludes);.DS_Store</DefaultItemExcludes>
   </PropertyGroup>
 
+  <Import Project="..\XamarinProjectsStructureTemplate.Common.Shared\XamarinProjectsStructureTemplate.Common.Shared.projitems" Label="Shared" Condition="Exists('..\XamarinProjectsStructureTemplate.Common.Shared\XamarinProjectsStructureTemplate.Common.Shared.projitems')" />
 </Project>
