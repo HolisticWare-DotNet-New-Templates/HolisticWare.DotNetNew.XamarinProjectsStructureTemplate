@@ -31,6 +31,17 @@
     //      -   csproj file 
     //      -   namespace
     "sourceName": "XamarinProjectsStructureTemplate",
+    // placeholderFilename (optional)
+    // A filename that will be completely ignored expect to indicate that its containing 
+    // directory should be copied. This allows creation of empty directory in the created 
+    // template, by having a corresponding source directory containing just the placeholder 
+    // file. Completely empty directories are ignored.
+    // If not specified, a default value of "-.-" is used.
+    // touch docs/-.-
+    // touch externals/-.-
+    // touch externals/android/-.-
+    // touch externals/ios/-.-
+    "placeholderFilename": "-.-",
     "sources": 
     [
         {
