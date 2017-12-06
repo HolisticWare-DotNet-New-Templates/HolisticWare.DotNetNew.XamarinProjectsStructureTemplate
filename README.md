@@ -1,5 +1,22 @@
 # HolisticWare.DotNetNew.XamarinProjectsStructureTemplate
 
+## Usage
+
+    dotnet new hw-structure -n SomeProject -o SomeOutputFolder
+
+Upon succesful creation:
+
+    The template "Custom template for Xamarin cross platform libraries and bindings" was created successfully.
+
+See below folder structure generated: [Folder Structure](#folder-structure)
+
+## Installation
+
+    dotnet new \
+        --install “HolisticWare.DotNetNew.XamarinProjectsStructureTemplate.CSharp”
+
+
+## NuGet
 
 HolisticWare.DotNetNew.XamarinProjectsStructureTemplate
 
@@ -13,19 +30,10 @@ HolisticWare.DotNetNew.XamarinProjectsStructureTemplate
         -Source https://www.nuget.org/api/v2/package \
         HolisticWare.DotNetNew.XamarinProjectsStructureTemplate.CSharp.2017.12.2.2.nupkg
 
-## Installation
 
-    dotnet new -i Holisticware
-    
-## Usage
 
-    dotnet new hw-structure --name Demo --output Demo
 
-Succesful creation:
-
-    The template "Custom template for Xamarin cross platform libraries and bindings" was created successfully.
-
-Folder structure:
+## Folder structure:
 
     tree Demo
 
