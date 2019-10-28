@@ -1,8 +1,8 @@
 {
     "$schema": "http://json.schemastore.org/template",
-    "author": "HolisticWare/Xamarin Miljenko Cvjetko moljac Mel",
-    "classifications": 
-        [ 
+    "author": "HolisticWare/Xamarin moljac Miljenko Mel Cvjetko",
+    "classifications":
+        [
             // Tags used to search for the template.
             "Custom Templates",
             "Xamarin",
@@ -10,7 +10,7 @@
             "Cross Platform",
             "xplat"
         ],
-    "groupIdentity": "HolisticWare.Tools.ProjectTemplates",    
+    "groupIdentity": "HolisticWare.Tools.ProjectTemplates",
     "name": "Custom template for Xamarin cross platform libraries and bindings",
     // A unique ID for the project template.
     "identity": "HolisticWare.DotNetNew.XamarinProjectsStructureTemplate.CSharp",
@@ -18,8 +18,8 @@
     "shortName": "hw-structure",
     // replacement guids - used in the projects that will be replaced by new ones
     // find . -name *.csproj -exec grep ProjectGuid {} \;
-    "guids": 
-    [ 
+    "guids":
+    [
         "D596961B-FD05-427C-90A0-D7532463A60A",
         "275DCE56-7F97-42A9-828C-D03A79AD7406",
         "0F0ACEAE-5373-49FA-9F65-17FA4A0AABA5",
@@ -28,13 +28,13 @@
         "86A43EF1-6DF4-48D7-930B-B7590F46113A"
     ],
     // replacements string
-    //      -   csproj file 
+    //      -   csproj file
     //      -   namespace
     "sourceName": "XamarinProjectsStructureTemplate",
     // placeholderFilename (optional)
-    // A filename that will be completely ignored expect to indicate that its containing 
-    // directory should be copied. This allows creation of empty directory in the created 
-    // template, by having a corresponding source directory containing just the placeholder 
+    // A filename that will be completely ignored expect to indicate that its containing
+    // directory should be copied. This allows creation of empty directory in the created
+    // template, by having a corresponding source directory containing just the placeholder
     // file. Completely empty directories are ignored.
     // If not specified, a default value of "-.-" is used.
     // touch docs/-.-
@@ -42,20 +42,20 @@
     // touch externals/android/-.-
     // touch externals/ios/-.-
     "placeholderFilename": "-.-",
-    "sources": 
+    "sources":
     [
         {
             "source": "./",
             "target": "./",
-            "exclude": 
+            "exclude":
             [
                 // .gitginore include would be nice
                 ".template.config/**",
-                ".template.config/**/*", 
+                ".template.config/**/*",
                 "**/[Bb]in/**",
-                "**/[Oo]bj/**", 
-                "**/*.filelist", 
-                "**/*.user", 
+                "**/[Oo]bj/**",
+                "**/*.filelist",
+                "**/*.user",
                 "**/*.lock.json",
                 "**/.vs/**",
                 "**/packages/**",
@@ -64,9 +64,9 @@
             ]
         }
     ],
-    "tags": 
+    "tags":
     {
         // Specify that this template is in C#.
-        "language": "C#"                      
+        "language": "C#"
     }
 }

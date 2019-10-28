@@ -1,46 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{86A43EF1-6DF4-48D7-930B-B7590F46113A}</ProjectGuid>
-    <ProjectTypeGuids>{8FFB629D-F513-41CE-95D2-7ECE97B6EEEC};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <OutputType>Library</OutputType>
+    <TargetFrameworks>Xamarin.iOS10</TargetFrameworks>
+    <IsBindingProject>true</IsBindingProject>
     <RootNamespace>XamarinProjectsStructureTemplate.Bindings</RootNamespace>
     <AssemblyName>XamarinProjectsStructureTemplate.Bindings</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+    <FileVersion>0.0.0.0</FileVersion>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug</OutputPath>
-    <DefineConstants>DEBUG;</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release</OutputPath>
-    <DefineConstants></DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+
+  <PropertyGroup>
+    <PackageId>HolisticWare.XamarinProjectsStructureTemplate.Bindings</PackageId>
+    <Title>HolisticWare.XamarinProjectsStructureTemplate.Bindings iOS Library</Title>
+    <Summary>C# bindings for HolisticWare.XamarinProjectsStructureTemplate.Bindings iOS Library</Summary>
+    <Description>C# bindings for HolisticWare.XamarinProjectsStructureTemplate.Bindings iOS Library</Description>
+    <Authors>HolisticWare, Xamarin</Authors>
+    <Authors>HolisticWare, Xamarin</Authors>
+    <Copyright>HolisticWare</Copyright>
+    <PackageIconUrl>https://holisticware.net</PackageIconUrl>
+    <PackageProjectUrl>https://holisticware.net</PackageProjectUrl>
+    <PackageLicenseUrl>https://holisticware.net</PackageLicenseUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <RequireLicenceAcceptance>true</RequireLicenceAcceptance>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageTags>holisticware, xamarin, android, bindings,  </PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackOnBuild>true</PackOnBuild>
   </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="System" />
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
+  
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Folder Include="Resources\" />
   </ItemGroup>
+  
+
   <ItemGroup>
-    <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
+    <Compile Remove="Enums.cs" />
+    <Compile Remove="ApiDefinition.cs" />
   </ItemGroup>
+  
   <ItemGroup>
-    <ObjcBindingCoreSource Include="Structs.cs" />
+    <ObjcBindingCoreSource Include="Enums.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true'" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ObjcBindingApiDefinition Include="ApiDefinition.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true'" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MSBuild.Sdk.Extras" Version="1.4.0" PrivateAssets="All" />
+  </ItemGroup>
+  
+  <Import Project="$(MSBuildSDKExtrasTargets)" Condition="Exists('$(MSBuildSDKExtrasTargets)')" />
+
   <Import Project="..\XamarinProjectsStructureTemplate.Common.Shared\XamarinProjectsStructureTemplate.Common.Shared.projitems" Label="Shared" Condition="Exists('..\XamarinProjectsStructureTemplate.Common.Shared\XamarinProjectsStructureTemplate.Common.Shared.projitems')" />
-  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
+
 </Project>
+
+
