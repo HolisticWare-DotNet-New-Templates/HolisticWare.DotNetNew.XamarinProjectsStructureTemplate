@@ -3,19 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.NetStandard10", "XamarinProjectsStructureTemplate.NetStandard10\XamarinProjectsStructureTemplate.NetStandard10.csproj", "{0AEA6F73-AEC9-473E-8911-C140FEA830EC}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "XamarinProjectsStructureTemplate.CoreCommon.Shared", "XamarinProjectsStructureTemplate.CoreCommon.Shared\XamarinProjectsStructureTemplate.CoreCommon.Shared.shproj", "{FED5275D-B937-4065-9A08-C17B2D704A14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.Bindings.XamarinIOS", "XamarinProjectsStructureTemplate.Bindings.XamarinIOS\XamarinProjectsStructureTemplate.Bindings.XamarinIOS.csproj", "{86A43EF1-6DF4-48D7-930B-B7590F46113A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.Bindings.netstandard10", "XamarinProjectsStructureTemplate.Bindings.netstandard10\XamarinProjectsStructureTemplate.Bindings.netstandard10.csproj", "{C2DC201B-4D37-4490-9C24-43CE1DF3DC12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.Bindings.XamarinAndroid", "XamarinProjectsStructureTemplate.Bindings.XamarinAndroid\XamarinProjectsStructureTemplate.Bindings.XamarinAndroid.csproj", "{837AE01F-CBB8-4B5A-8766-361787779B9E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.Bindings.XamarinAndroid", "XamarinProjectsStructureTemplate.Bindings.XamarinAndroid\XamarinProjectsStructureTemplate.Bindings.XamarinAndroid.csproj", "{0AB4836A-2A9F-4755-A0AC-4A86BB6CB36E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.Bindings.NetStandard10", "XamarinProjectsStructureTemplate.Bindings.NetStandard10\XamarinProjectsStructureTemplate.Bindings.NetStandard10.csproj", "{191CD6CA-E422-42A7-AD04-F3E731A9F553}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.Bindings.XamarinAndroid.OldNonSDKStyle", "XamarinProjectsStructureTemplate.Bindings.XamarinAndroid.OldNonSDKStyle\XamarinProjectsStructureTemplate.Bindings.XamarinAndroid.OldNonSDKStyle.csproj", "{837AE01F-CBB8-4B5A-8766-361787779B9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.XamarinIOS", "XamarinProjectsStructureTemplate.XamarinIOS\XamarinProjectsStructureTemplate.XamarinIOS.csproj", "{0FA4E7C0-318F-4515-AFA4-613FF3A296CB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.Bindings.XamarinIOS", "XamarinProjectsStructureTemplate.Bindings.XamarinIOS\XamarinProjectsStructureTemplate.Bindings.XamarinIOS.csproj", "{FFBF2486-846B-447B-9741-AC0A7EE1746F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.XamarinAndroid", "XamarinProjectsStructureTemplate.XamarinAndroid\XamarinProjectsStructureTemplate.XamarinAndroid.csproj", "{BF701D87-B10A-40DB-B5FE-B4DA1B67139C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.Bindings.XamarinIOS.OldNonSDKStyle", "XamarinProjectsStructureTemplate.Bindings.XamarinIOS.OldNonSDKStyle\XamarinProjectsStructureTemplate.Bindings.XamarinIOS.OldNonSDKStyle.csproj", "{86A43EF1-6DF4-48D7-930B-B7590F46113A}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "XamarinProjectsStructureTemplate.Common.Shared", "XamarinProjectsStructureTemplate.Common.Shared\XamarinProjectsStructureTemplate.Common.Shared.shproj", "{FED5275D-B937-4065-9A08-C17B2D704A14}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.CoreCommon.netstandard10", "XamarinProjectsStructureTemplate.CoreCommon.netstandard10\XamarinProjectsStructureTemplate.CoreCommon.netstandard10.csproj", "{FF976658-DBE9-42B8-9751-C8CC0AAF7778}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.CoreCommon.XamarinAndroid", "XamarinProjectsStructureTemplate.CoreCommon.XamarinAndroid\XamarinProjectsStructureTemplate.CoreCommon.XamarinAndroid.csproj", "{BF701D87-B10A-40DB-B5FE-B4DA1B67139C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.CoreCommon.XamarinIOS", "XamarinProjectsStructureTemplate.CoreCommon.XamarinIOS\XamarinProjectsStructureTemplate.CoreCommon.XamarinIOS.csproj", "{0FA4E7C0-318F-4515-AFA4-613FF3A296CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,29 +27,37 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0AEA6F73-AEC9-473E-8911-C140FEA830EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0AEA6F73-AEC9-473E-8911-C140FEA830EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0AEA6F73-AEC9-473E-8911-C140FEA830EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0AEA6F73-AEC9-473E-8911-C140FEA830EC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{86A43EF1-6DF4-48D7-930B-B7590F46113A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{86A43EF1-6DF4-48D7-930B-B7590F46113A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{86A43EF1-6DF4-48D7-930B-B7590F46113A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{86A43EF1-6DF4-48D7-930B-B7590F46113A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2DC201B-4D37-4490-9C24-43CE1DF3DC12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2DC201B-4D37-4490-9C24-43CE1DF3DC12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2DC201B-4D37-4490-9C24-43CE1DF3DC12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2DC201B-4D37-4490-9C24-43CE1DF3DC12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AB4836A-2A9F-4755-A0AC-4A86BB6CB36E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AB4836A-2A9F-4755-A0AC-4A86BB6CB36E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AB4836A-2A9F-4755-A0AC-4A86BB6CB36E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AB4836A-2A9F-4755-A0AC-4A86BB6CB36E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{837AE01F-CBB8-4B5A-8766-361787779B9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{837AE01F-CBB8-4B5A-8766-361787779B9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{837AE01F-CBB8-4B5A-8766-361787779B9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{837AE01F-CBB8-4B5A-8766-361787779B9E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{191CD6CA-E422-42A7-AD04-F3E731A9F553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{191CD6CA-E422-42A7-AD04-F3E731A9F553}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{191CD6CA-E422-42A7-AD04-F3E731A9F553}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{191CD6CA-E422-42A7-AD04-F3E731A9F553}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0FA4E7C0-318F-4515-AFA4-613FF3A296CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0FA4E7C0-318F-4515-AFA4-613FF3A296CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0FA4E7C0-318F-4515-AFA4-613FF3A296CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0FA4E7C0-318F-4515-AFA4-613FF3A296CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFBF2486-846B-447B-9741-AC0A7EE1746F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFBF2486-846B-447B-9741-AC0A7EE1746F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFBF2486-846B-447B-9741-AC0A7EE1746F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFBF2486-846B-447B-9741-AC0A7EE1746F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86A43EF1-6DF4-48D7-930B-B7590F46113A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86A43EF1-6DF4-48D7-930B-B7590F46113A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86A43EF1-6DF4-48D7-930B-B7590F46113A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86A43EF1-6DF4-48D7-930B-B7590F46113A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF976658-DBE9-42B8-9751-C8CC0AAF7778}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF976658-DBE9-42B8-9751-C8CC0AAF7778}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF976658-DBE9-42B8-9751-C8CC0AAF7778}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF976658-DBE9-42B8-9751-C8CC0AAF7778}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BF701D87-B10A-40DB-B5FE-B4DA1B67139C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BF701D87-B10A-40DB-B5FE-B4DA1B67139C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF701D87-B10A-40DB-B5FE-B4DA1B67139C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF701D87-B10A-40DB-B5FE-B4DA1B67139C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FA4E7C0-318F-4515-AFA4-613FF3A296CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FA4E7C0-318F-4515-AFA4-613FF3A296CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FA4E7C0-318F-4515-AFA4-613FF3A296CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FA4E7C0-318F-4515-AFA4-613FF3A296CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

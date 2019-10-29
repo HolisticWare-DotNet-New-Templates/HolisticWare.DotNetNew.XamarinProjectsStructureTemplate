@@ -51,6 +51,5 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <Import Project="..\XamarinProjectsStructureTemplate.Common.Shared\XamarinProjectsStructureTemplate.Common.Shared.projitems" Label="Shared" Condition="Exists('..\XamarinProjectsStructureTemplate.Common.Shared\XamarinProjectsStructureTemplate.Common.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

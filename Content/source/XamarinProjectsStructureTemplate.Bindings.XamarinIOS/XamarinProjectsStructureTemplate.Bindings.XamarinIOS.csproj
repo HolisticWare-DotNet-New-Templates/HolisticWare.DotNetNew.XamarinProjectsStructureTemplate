@@ -36,18 +36,14 @@
   
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Properties\" />
   </ItemGroup>
   
 
   <ItemGroup>
-    <Compile Remove="Enums.cs" />
     <Compile Remove="ApiDefinition.cs" />
   </ItemGroup>
   
-  <ItemGroup>
-    <ObjcBindingCoreSource Include="Enums.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true'" />
-  </ItemGroup>
-
   <ItemGroup>
     <ObjcBindingApiDefinition Include="ApiDefinition.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true'" />
   </ItemGroup>
@@ -57,8 +53,6 @@
   </ItemGroup>
   
   <Import Project="$(MSBuildSDKExtrasTargets)" Condition="Exists('$(MSBuildSDKExtrasTargets)')" />
-
-  <Import Project="..\XamarinProjectsStructureTemplate.Common.Shared\XamarinProjectsStructureTemplate.Common.Shared.projitems" Label="Shared" Condition="Exists('..\XamarinProjectsStructureTemplate.Common.Shared\XamarinProjectsStructureTemplate.Common.Shared.projitems')" />
 
 </Project>
 
