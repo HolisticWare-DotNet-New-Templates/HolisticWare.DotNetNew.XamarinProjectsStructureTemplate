@@ -47,22 +47,26 @@
         {
             "source": "./",
             "target": "./",
-            "exclude":
+            "modifiers": 
             [
-                // .gitginore include would be nice
-                ".template.config/**",
-                ".template.config/**/*",
-                "**/[Bb]in/**",
-                "**/[Oo]bj/**",
-                "**/*.filelist",
-                "**/*.user",
-                "**/*.lock.json",
-                "**/.vs/**",
-                "**/packages/**",
-                "**/*.DS_Store",
-                "**/.DS_Store",
-                "./tools/**",
-                "**/tools/**",
+                {
+                    "exclude": 
+                    [
+                        // .gitginore include would be nice
+                        ".template.config/**",
+                        ".template.config/**/*",
+                        "**/[Bb]in/**",
+                        "**/[Oo]bj/**",
+                        "**/tools/**",
+                        "**/*.filelist",
+                        "**/*.user",
+                        "**/*.lock.json",
+                        "**/.vs/**",
+                        "**/packages/**",
+                        "**/*.DS_Store",
+                        "**/.DS_Store",
+                    ]
+                }
             ]
         }
     ],
