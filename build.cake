@@ -6,7 +6,7 @@
 
 DateTime dt = DateTime.Now;
 
-FilePath file = GetFiles ($"./nuget/*.nuspec").ToList () [0];	
+FilePath file = GetFiles ($"./*.nuspec").ToList () [0];	
 Information($"{FileReadText(file)}");
 
 string version = $"{dt.Year}.{dt.Month}.{dt.Day}.{dt.ToString("HHmm")}";
@@ -30,7 +30,7 @@ string version = $"{dt.Year}.{dt.Month}.{dt.Day}.{dt.ToString("HHmm")}";
 TransformConfig
 (
 	file.ToString(), 
-	"HolisticWare.DotNetNew.XamarinProjectsStructureTemplate.CSharp.nuspec",
+	$"new.tmp{version}.nuspec",
 	new TransformationCollection 
 	{
 		{ "package/metadata/version", version },
@@ -42,7 +42,7 @@ int exit_code = StartProcess
 	"nuget", 
 	new ProcessSettings
 	{ 
-		Arguments = $"pack HolisticWare.DotNetNew.XamarinProjectsStructureTemplate.CSharp.nuspec" 
+		Arguments = $"pack new.tmp{version}.nuspec" 
 	}
 );
 
