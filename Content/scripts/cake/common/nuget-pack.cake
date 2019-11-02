@@ -1,7 +1,8 @@
 
 //---------------------------------------------------------------------------------------
 Task("nuget-pack")
-    .IsDependentOn ("nuget-pack")
+    .IsDependentOn ("nuget-pack-dotnet")
+    .IsDependentOn ("nuget-pack-msbuild")
     ;
 
 Task("nuget-pack-msbuild")
@@ -33,4 +34,11 @@ Task("nuget-pack-msbuild")
         }
     );
 
+Task("nuget-pack-dotnet")
+    .Does
+    (
+        () =>
+        {
+        }
+    );
 //---------------------------------------------------------------------------------------

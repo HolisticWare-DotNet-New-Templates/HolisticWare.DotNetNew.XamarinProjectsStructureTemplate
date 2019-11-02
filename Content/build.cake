@@ -76,11 +76,28 @@ var TARGET = Argument ("t", Argument ("target", "Default"));
 
 string[] directories_to_clean = new string[]
 {
+    "./external/repos-downloaded/",
     "./output/",
     "./tools/",
     "./source/**/bin/",
     "./source/**/obj/",
-    "./external/repos-downloaded/",
+    "./samples/**/bin/",
+    "./samples/**/obj/",
+    "./tests/**/bin/",
+    "./tests/**/obj/",
+    "./source/**/.vs/",
+    "./samples/**/.vs/",
+    "./tests/**/.vs/",
+    "./source/**/.idea/",
+    "./samples/**/.idea/",
+    "./tests/**/.idea/",
+    "./**/packages/",
+};
+
+string[] files_to_clean = new string[]
+{
+    "./**/*.binlog",
+    "./**/.DS_Store",
 };
 
 string NUGET_VERSION="0.0.0.0";

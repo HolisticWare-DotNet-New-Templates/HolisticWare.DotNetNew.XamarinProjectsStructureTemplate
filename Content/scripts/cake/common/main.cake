@@ -1,9 +1,4 @@
 
-string[] file_patterns = new string[]
-{
-    "./**/*.binlog",
-};
-
 //---------------------------------------------------------------------------------------
 Task ("clean")
     .Does
@@ -20,9 +15,9 @@ Task ("clean-folders")
     (
         () =>
         {
-            foreach(string folder in directories_to_clean)
+            foreach(string directory_pattern in directories_to_clean)
             {
-                DirectoryPathCollection directories = GetDirectories(folder);
+                DirectoryPathCollection directories = GetDirectories(directory_pattern);
                 foreach(DirectoryPath dp in directories)
                 {
                     Information($"Directory: {dp}");
@@ -52,9 +47,9 @@ Task ("clean-files")
     (
         () =>
         {
-            foreach(string file in file_patterns)
+            foreach(string file_pattern in files_to_clean)
             {
-                FilePathCollection files = GetFiles(file);
+                FilePathCollection files = GetFiles(file_pattern);
                 foreach(FilePath fp in files)
                 {
                     Information($"File: {fp}");
