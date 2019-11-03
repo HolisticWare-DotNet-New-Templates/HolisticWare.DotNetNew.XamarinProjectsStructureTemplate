@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\source\XamarinProjectsStructureTemplate.Bindings.netstandard10\XamarinProjectsStructureTemplate.Bindings.netstandard10.csproj" />
+    <ProjectReference Include="..\..\source\XamarinProjectsStructureTemplate.CoreCommon.netstandard10\XamarinProjectsStructureTemplate.CoreCommon.netstandard10.csproj" />
+  </ItemGroup>
+  <Import Project="..\..\source\XamarinProjectsStructureTemplate.CoreCommon.Shared\XamarinProjectsStructureTemplate.CoreCommon.Shared.projitems" Label="Shared" Condition="Exists('..\..\source\XamarinProjectsStructureTemplate.CoreCommon.Shared\XamarinProjectsStructureTemplate.CoreCommon.Shared.projitems')" />
+</Project>
