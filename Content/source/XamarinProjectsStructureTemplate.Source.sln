@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "XamarinProjectsStructureTemplate.CoreCommon.Shared", "XamarinProjectsStructureTemplate.CoreCommon.Shared\XamarinProjectsStructureTemplate.CoreCommon.Shared.shproj", "{FED5275D-B937-4065-9A08-C17B2D704A14}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.netstandard10", "XamarinProjectsStructureTemplate.netstandard10\XamarinProjectsStructureTemplate.netstandard10.csproj", "{FF976658-DBE9-42B8-9751-C8CC0AAF7778}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "XamarinProjectsStructureTemplate.Shared", "XamarinProjectsStructureTemplate.Shared\XamarinProjectsStructureTemplate.Shared.shproj", "{FED5275D-B937-4065-9A08-C17B2D704A14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.XamarinAndroid", "XamarinProjectsStructureTemplate.XamarinAndroid\XamarinProjectsStructureTemplate.XamarinAndroid.csproj", "{BF701D87-B10A-40DB-B5FE-B4DA1B67139C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.XamarinIOS", "XamarinProjectsStructureTemplate.XamarinIOS\XamarinProjectsStructureTemplate.XamarinIOS.csproj", "{0FA4E7C0-318F-4515-AFA4-613FF3A296CB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.Bindings.netstandard10", "XamarinProjectsStructureTemplate.Bindings.netstandard10\XamarinProjectsStructureTemplate.Bindings.netstandard10.csproj", "{C2DC201B-4D37-4490-9C24-43CE1DF3DC12}"
 EndProject
@@ -14,12 +20,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.Bindings.XamarinIOS", "XamarinProjectsStructureTemplate.Bindings.XamarinIOS\XamarinProjectsStructureTemplate.Bindings.XamarinIOS.csproj", "{FFBF2486-846B-447B-9741-AC0A7EE1746F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.Bindings.XamarinIOS.OldNonSDKStyle", "XamarinProjectsStructureTemplate.Bindings.XamarinIOS.OldNonSDKStyle\XamarinProjectsStructureTemplate.Bindings.XamarinIOS.OldNonSDKStyle.csproj", "{86A43EF1-6DF4-48D7-930B-B7590F46113A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.CoreCommon.netstandard10", "XamarinProjectsStructureTemplate.CoreCommon.netstandard10\XamarinProjectsStructureTemplate.CoreCommon.netstandard10.csproj", "{FF976658-DBE9-42B8-9751-C8CC0AAF7778}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.CoreCommon.XamarinAndroid", "XamarinProjectsStructureTemplate.CoreCommon.XamarinAndroid\XamarinProjectsStructureTemplate.CoreCommon.XamarinAndroid.csproj", "{BF701D87-B10A-40DB-B5FE-B4DA1B67139C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.CoreCommon.XamarinIOS", "XamarinProjectsStructureTemplate.CoreCommon.XamarinIOS\XamarinProjectsStructureTemplate.CoreCommon.XamarinIOS.csproj", "{0FA4E7C0-318F-4515-AFA4-613FF3A296CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

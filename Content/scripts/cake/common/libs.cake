@@ -12,8 +12,8 @@ Task("libs")
     .IsDependentOn ("nuget-restore-libs")
     .IsDependentOn ("libs-msbuild-solutions")
     .IsDependentOn ("libs-msbuild-projects")
-    .IsDependentOn ("libs-dotnet-solutions")
-    .IsDependentOn ("libs-dotnet-projects")
+    // .IsDependentOn ("libs-dotnet-solutions")
+    // .IsDependentOn ("libs-dotnet-projects")
     .Does
     (
         () =>
@@ -87,6 +87,7 @@ Task("libs-dotnet-solutions")
             {
 				foreach (string config in configs)
                 {
+                    Information($"DotNetCoreBuild {config} - {sln} ");
                     DotNetCoreBuild
                     (
                         sln.ToString(),
@@ -110,24 +111,19 @@ Task("libs-msbuild-projects")
         {
             foreach(FilePath prj in SourceLibProjects)
             {
-                MSBuild
-                (
-                    prj.ToString(),
-                    new MSBuildSettings
-                    {
-                        Configuration = "Debug",
-                    }
-                    //.WithProperty("DefineConstants", "TRACE;DEBUG;NETCOREAPP2_0;NUNIT")
-                );
-                MSBuild
-                (
-                    prj.ToString(),
-                    new MSBuildSettings
-                    {
-                        Configuration = "Release",
-                    }
-                    //.WithProperty("DefineConstants", "TRACE;DEBUG;NETCOREAPP2_0;NUNIT")
-                );
+				foreach (string config in configs)
+                {
+                    Information($"MSBuild {config} - {prj} ");
+                    MSBuild
+                    (
+                        prj.ToString(),
+                        new MSBuildSettings
+                        {
+                            Configuration = config,
+                        }
+                        //.WithProperty("DefineConstants", "TRACE;DEBUG;NETCOREAPP2_0;NUNIT")
+                    );
+                }
             }
 
             return;
@@ -141,24 +137,25 @@ Task("libs-dotnet-projects")
         {
             foreach(FilePath prj in SourceLibProjects)
             {
-                DotNetCoreBuild
-                (
-                    prj.ToString(),
-                    new DotNetCoreBuildSettings
-                    {
-                        Configuration = "Debug",
-                    }
-                    //.WithProperty("DefineConstants", "TRACE;DEBUG;NETCOREAPP2_0;NUNIT")
-                );
-                DotNetCoreBuild
-                (
-                    prj.ToString(),
-                    new DotNetCoreBuildSettings
-                    {
-                        Configuration = "Release",
-                    }
-                    //.WithProperty("DefineConstants", "TRACE;DEBUG;NETCOREAPP2_0;NUNIT")
-                );
+                if ( prj.ToString().EndsWith(".XamarinAndroid") || prj.ToString().EndsWith(".XamariniOS"))
+                {
+                    continue;
+                }
+
+                foreach (string config in configs)
+                {
+                    Information($"DotNetCoreBuild {config} - {prj} ");
+
+                    DotNetCoreBuild
+                    (
+                        prj.ToString(),
+                        new DotNetCoreBuildSettings
+                        {
+                            Configuration = config,
+                        }
+                        //.WithProperty("DefineConstants", "TRACE;DEBUG;NETCOREAPP2_0;NUNIT")
+                    );
+                }
             }
 
             return;

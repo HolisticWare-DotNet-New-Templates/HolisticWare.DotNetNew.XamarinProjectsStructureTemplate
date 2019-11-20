@@ -2,6 +2,12 @@
 #########################################################################################
 Installing
 
+dotnet tool Cake
+
+    dotnet tool install -g Cake.Tool
+
+Vannila Cake
+
     Windows - powershell
 
         Invoke-WebRequest http://cakebuild.net/download/bootstrapper/windows -OutFile build.ps1
