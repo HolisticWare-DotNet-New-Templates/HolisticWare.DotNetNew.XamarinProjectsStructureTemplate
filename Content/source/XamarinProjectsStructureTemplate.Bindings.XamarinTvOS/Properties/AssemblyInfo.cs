@@ -15,10 +15,10 @@ using Foundation;
 [assembly: AssemblyTitle("XamarinProjectsStructureTemplate.Bindings")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("HolisticWare / Xamarin / Microsoft ")]
+[assembly: AssemblyCompany("Microsoft / Xamarin Inc. ")]
 [assembly: AssemblyProduct("")]
-[assembly: AssemblyCopyright("moljac @ HolisticWare / Xamarin / Microsoft 2016")]
-[assembly: AssemblyTrademark("HolisticWare / Xamarin / Microsoft ")]
+[assembly: AssemblyCopyright("Microsoft / Xamarin Inc. ")]
+[assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 // The assembly version has the format "{Major}.{Minor}.{Build}.{Revision}".

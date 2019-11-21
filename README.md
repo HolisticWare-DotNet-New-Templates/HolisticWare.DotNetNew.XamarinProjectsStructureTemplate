@@ -1,12 +1,33 @@
 # HolisticWare.DotNetNew.XamarinProjectsStructureTemplate
 
+This `dotnet` template 
+
+*   is premised on the experience that it is easier to remove/delete code (projects in this case), 
+    than to add them.
+
+*   is prepared for cross-platform usage, bait-n-switch concept commonly used in libraries like 
+    Xamarin.Forms, Xamarin.Essentials, Xamarin.Auth and follows these rules:
+
+    *   All assemblies have the same:
+
+        *   Assembly Name
+        
+        *   Namespace
+
+*   https://github.com/holisticware-xamarin/HolisticWare.DotNetNew.XamarinProjectsStructureTemplate
+
+*   https://github.com/holisticware-xamarin/HolisticWare.XamarinProjectsStructureTemplate
+
+
 ## Usage
 
+```
     dotnet new hw-structure -n SomeProject -o SomeOutputFolder
 
-Upon succesful creation:
+# Upon succesful creation:
 
     The template "Custom template for Xamarin cross platform libraries and bindings" was created successfully.
+```
 
 See below folder structure generated: [Folder Structure](#folder-structure)
 
@@ -20,24 +41,29 @@ See below folder structure generated: [Folder Structure](#folder-structure)
 
 HolisticWare.DotNetNew.XamarinProjectsStructureTemplate
 
+```
     # nuget restore invalid version errors
     dotnet new .
     # OK
     dotnet new ./
     
+```
 
+```
     nuget push \
         -Source https://www.nuget.org/api/v2/package \
         HolisticWare.DotNetNew.XamarinProjectsStructureTemplate.CSharp.2017.12.2.2.nupkg
-
+```
 
 
 
 ## Folder structure:
 
+
+```
     tree Demo
 
-Output:
+    # Output:
     
     Demo
     ├── External-Dependency-Info.txt
@@ -170,13 +196,19 @@ Output:
         │       └── project.assets.json
         ├── Demo.Source.sln
         └── Demo.Source.userprefs
+```
 
 
 ## `dotnet new` templating links/references
 
 *   https://github.com/dotnet/templating/wiki/Available-templates-for-dotnet-new
+
 *   http://dotnetnew.azurewebsites.net/
+
 *   https://docs.microsoft.com/en-us/dotnet/core/tools/custom-templates
+
 *   https://pioneercode.com/post/how-to-create-a-dot-net-new-project-template-in-dot-net-core
+
 *   https://rehansaeed.com/custom-project-templates-using-dotnet-new/
+
 *   https://github.com/aspnet/templating/blob/dev/src/Microsoft.AspNetCore.SpaTemplates/content/Aurelia-CSharp/.template.config/template.json

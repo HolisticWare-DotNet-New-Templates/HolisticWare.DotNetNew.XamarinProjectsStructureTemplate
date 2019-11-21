@@ -10,8 +10,8 @@
     <!--
     <icon>docs\HolisticWare.svg.png</icon>
     -->
-    <iconUrl>https://github.com/moljac</iconUrl>
-    <projectUrl>https://github.com/moljac</projectUrl>
+    <icon></icon>
+    <project>https://github.com/holisticware-xamarin/HolisticWare.DotNetNew.XamarinProjectsStructureTemplate</project>
     <!--
     <licenseUrl>https://github.com/moljac</licenseUrl>
     -->

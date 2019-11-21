@@ -9,6 +9,7 @@
 
     <TargetFrameworks>MonoAndroid81</TargetFrameworks>
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
+    <RootNamespace>XamarinProjectsStructureTemplate.Bindings</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup>

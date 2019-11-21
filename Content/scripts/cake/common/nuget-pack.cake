@@ -1,5 +1,9 @@
 
 //---------------------------------------------------------------------------------------
+Task("nuget")
+    .IsDependentOn ("nuget-pack")
+    ;
+
 Task("nuget-pack")
     .IsDependentOn ("nuget-pack-dotnet")
     .IsDependentOn ("nuget-pack-msbuild")

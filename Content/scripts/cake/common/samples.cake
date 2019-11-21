@@ -1,12 +1,10 @@
 #load "./nuget-restore.cake"
 
-
-
 //---------------------------------------------------------------------------------------
-Task("libs")
-    .IsDependentOn ("nuget-restore-libs")
-    .IsDependentOn ("libs-msbuild-solutions")
-    .IsDependentOn ("libs-msbuild-projects")
+Task("samples")
+    .IsDependentOn ("nuget-restore-samples")
+    .IsDependentOn ("samples-msbuild-solutions")
+    .IsDependentOn ("samples-msbuild-projects")
     // .IsDependentOn ("libs-dotnet-solutions")
     // .IsDependentOn ("libs-dotnet-projects")
     .Does
@@ -18,14 +16,15 @@ Task("libs")
     );
 
 
-Task("libs-msbuild-solutions")
+Task("samples-msbuild-solutions")
     .Does
     (
         () =>
         {
             foreach(FilePath sln in SourceLibSolutions)
             {
-                string binlog_path = $"./output/holisticware-source-build-{sln}.binlog";
+                string binlog_path = $"./output/holisticware-samples-build-{sln}.binlog";
+
 				foreach (string config in configs)
                 {
                     MSBuild
@@ -73,14 +72,15 @@ Task("libs-msbuild-solutions")
         }
     );
 
-Task("libs-dotnet-solutions")
+Task("samples-dotnet-solutions")
     .Does
     (
         () =>
         {
             foreach(FilePath sln in SourceLibSolutions)
             {
-                string binlog_path = $"./output/holisticware-source-build-{sln}.binlog";
+                string binlog_path = $"./output/holisticware-samples-build-{sln}.binlog";
+
 				foreach (string config in configs)
                 {
                     Information($"DotNetCoreBuild {config} - {sln} ");
@@ -100,14 +100,15 @@ Task("libs-dotnet-solutions")
         }
     );
 
-Task("libs-msbuild-projects")
+Task("samples-msbuild-projects")
     .Does
     (
         () =>
         {
             foreach(FilePath prj in SourceLibProjects)
             {
-                string binlog_path = $"./output/holisticware-source-build-{prj}.binlog";
+                string binlog_path = $"./output/holisticware-samples-build-{prj}.binlog";
+
 				foreach (string config in configs)
                 {
                     Information($"MSBuild {config} - {prj} ");
@@ -127,18 +128,19 @@ Task("libs-msbuild-projects")
         }
     );
 
-Task("libs-dotnet-projects")
+Task("samples-dotnet-projects")
     .Does
     (
         () =>
         {
             foreach(FilePath prj in SourceLibProjects)
             {
-                string binlog_path = $"./output/holisticware-source-build-{prj}.binlog";
                 if ( prj.ToString().EndsWith(".XamarinAndroid") || prj.ToString().EndsWith(".XamariniOS"))
                 {
                     continue;
                 }
+
+                string binlog_path = $"./output/holisticware-samples-build-{prj}.binlog";
 
                 foreach (string config in configs)
                 {
@@ -159,5 +161,4 @@ Task("libs-dotnet-projects")
             return;
         }
     );
-
 //---------------------------------------------------------------------------------------

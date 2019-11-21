@@ -1,5 +1,5 @@
 ﻿using System;
 
-namespace XamarinProjectsStructureTemplate.Bindings.XamarinIOS
+namespace XamarinProjectsStructureTemplate.Bindings
 {
 }

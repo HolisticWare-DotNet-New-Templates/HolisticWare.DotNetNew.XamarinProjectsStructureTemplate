@@ -106,6 +106,17 @@ string[] files_to_clean = new string[]
     "./**/.DS_Store",
 };
 
+string[] targets_to_run = new string[]
+{
+    // "externals",
+    "libs",
+    "samples",
+    "nuget",
+    "tests",
+    "tests-unit-tests",
+    "tests-unit-benchmarks",
+};
+
 string NUGET_VERSION="0.0.0.0";
 //.....................................................................
 // source (library)
@@ -129,6 +140,7 @@ FilePathCollection SamplesProjects  = GetFiles(samples_projects);
 #load "./scripts/cake/common/main.cake"
 #load "./scripts/cake/common/nuget-restore.cake"
 #load "./scripts/cake/common/libs.cake"
+#load "./scripts/cake/common/samples.cake"
 #load "./scripts/cake/common/nuget-pack.cake"
 #load "./scripts/cake/common/tests-unit-tests.cake"
 #load "./scripts/cake/common/tests-benchmarks.cake"
@@ -144,11 +156,10 @@ Task("Default")
     (
         () =>
         {
-            RunTarget("libs");
-            RunTarget("nuget");
-            RunTarget("samples");
-            //RunTarget("tests-unit-tests");
-            //RunTarget("tests-benchmarks");
+            foreach(string target_to_run in targets_to_run)
+            {
+                RunTarget($"target_to_run");
+            }
         }
     );
 

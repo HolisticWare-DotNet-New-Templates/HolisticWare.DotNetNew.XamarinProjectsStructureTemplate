@@ -7,19 +7,19 @@
 *   Bindings projects
 
     *   remove them if bindings are not used
-    
+
     *   platforms
-    
+
         *   Xamarin.Android  (new style, short style, SDK style projects)
 
             `XamarinProjectsStructureTemplate.Bindings.XamarinAndroid`
 
         *   Xamarin.Android (old style, long style, non SDK style projects)
-        
+
             `XamarinProjectsStructureTemplate.Bindings.XamarinAndroid.OldNonSDKStyle`
 
         *   Xamarin.iOS (new style, short style, SDK style projects)
-            
+
             `XamarinProjectsStructureTemplate.Bindings.XamarinIOS`
 
         *   Xamarin.iOS (old style, long style, non SDK style projects)
@@ -30,7 +30,7 @@
 
             `XamarinProjectsStructureTemplate.Bindings.netstandard10`
 
-*   Library (API) projects)
+*   Library (API) projects
 
     * reference Bindings projects if neccessary
 
@@ -47,7 +47,7 @@
             `XamarinProjectsStructureTemplate.XamarinAndroid`
 
         *   Xamarin.Android platform specific library code
-        
+
             `XamarinProjectsStructureTemplate.XamarinIOS`
 
 ## TODO (planed)
@@ -55,8 +55,8 @@
 *   UWP
 
     *   Sasa Bajtl
-    
-*   Xamarin.Mac 
+
+*   Xamarin.Mac
 
 *   C bindings
 

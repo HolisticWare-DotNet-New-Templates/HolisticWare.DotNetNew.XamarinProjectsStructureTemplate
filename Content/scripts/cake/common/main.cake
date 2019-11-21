@@ -1,3 +1,8 @@
+string[] configs = new string[]
+{
+    "Debug",
+    "Release"
+};
 
 //---------------------------------------------------------------------------------------
 Task ("clean")
@@ -65,5 +70,33 @@ Task ("clean-files")
             return;
         }
     );
+//---------------------------------------------------------------------------------------
+
+
+
+public void Build(string pattern)
+{
+	FilePathCollection files = GetFiles(pattern);
+
+	foreach(FilePath file in files)
+	{
+		foreach (string config in configs)
+		{
+			MSBuild
+			(
+				file.ToString(),
+				new MSBuildSettings
+				{
+					Configuration = config,
+				}
+				//.WithProperty("DefineConstants", "TRACE;DEBUG;NETCOREAPP2_0;NUNIT")
+				.WithProperty("AndroidClassParser", "jar2xml")
+
+			);
+		}
+	}
+
+	return;
+}
 //---------------------------------------------------------------------------------------
 
