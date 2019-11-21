@@ -1,23 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+<!--
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+-->
+<package>
   <metadata>
     <id>HolisticWare.DotNetNew.XamarinProjectsStructureTemplate.CSharp</id>
     <version>0.0.0</version>
     <description>
       Creates folder structure/layout for Xamarin cross-platform libraries and bindings
     </description>
-    <authors>moljac Miljenko Cvjetko Mel Xamarin / HolisticWare</authors>
+    <authors>moljac Miljenko Cvjetko Mel Microsoft / Xamarin / HolisticWare</authors>
     <!--
     <icon>docs\HolisticWare.svg.png</icon>
+    <project>
+      https://github.com/holisticware-xamarin/HolisticWare.DotNetNew.XamarinProjectsStructureTemplate
+    </project>
     -->
-    <icon></icon>
-    <project>https://github.com/holisticware-xamarin/HolisticWare.DotNetNew.XamarinProjectsStructureTemplate</project>
-    <!--
-    <licenseUrl>https://github.com/moljac</licenseUrl>
-    -->
-    <license type="expression">MIT</license>
+    <iconUrl>
+      https://github.com/moljac/HolisticWare.Branding/blob/master/pngs/holisticware/component/HolisticWare.svg.512x512.png
+    </iconUrl>
+    <projectUrl>
+      https://github.com/holisticware-xamarin/HolisticWare.DotNetNew.XamarinProjectsStructureTemplate
+    </projectUrl>
+    <license type="file">LICENSE.md</license>
     <packageTypes>
       <packageType name="Template" />
     </packageTypes>
   </metadata>
+  <files>
+    <file src="Content\docs\HolisticWare.svg.png" target="docs\" />
+    <file src="LICENSE.md" target="" />
+  </files>
+
 </package>

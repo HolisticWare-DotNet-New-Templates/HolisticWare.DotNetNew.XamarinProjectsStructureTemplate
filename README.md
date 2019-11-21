@@ -14,10 +14,17 @@ This `dotnet` template
         
         *   Namespace
 
-*   https://github.com/holisticware-xamarin/HolisticWare.DotNetNew.XamarinProjectsStructureTemplate
+*   dotnet template
 
-*   https://github.com/holisticware-xamarin/HolisticWare.XamarinProjectsStructureTemplate
+    https://github.com/holisticware-xamarin/HolisticWare.DotNetNew.XamarinProjectsStructureTemplate
 
+*   github template repo
+
+    https://github.com/holisticware-xamarin/HolisticWare.XamarinProjectsStructureTemplate
+
+*   nuget
+
+    https://www.nuget.org/packages/HolisticWare.DotNetNew.XamarinProjectsStructureTemplate.CSharp
 
 ## Usage
 
