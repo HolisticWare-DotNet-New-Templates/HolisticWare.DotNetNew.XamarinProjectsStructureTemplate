@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A84940C1-CD4A-4862-ABC9-A857D6FEC04C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.UITests</RootNamespace>
+    <AssemblyName>XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.UITests</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="Xamarin.UITest" Version="3.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Tests.cs" />
+    <Compile Include="AppInitializer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.iOS\XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.iOS.csproj">
+      <Project>{E949DABC-3505-4311-990B-3144B2529063}</Project>
+      <Name>XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.iOS</Name>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.Android\XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.Android.csproj">
+      <Project>{DF679B52-7B9C-4B0B-A5A2-8C6DAFC8D1A0}</Project>
+      <Name>XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.Android</Name>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

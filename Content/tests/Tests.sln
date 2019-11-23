@@ -1,0 +1,30 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "source", "source", "{3EF0A665-8364-418D-BC6D-ED17C7A4EF6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{C0E38ED8-D11C-46C6-AAA8-7D928F8BCF31}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{04B9822D-2764-4049-9689-654DD0ECBA30}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "unit-tests", "unit-tests", "{C12312B5-35F9-4ECF-9E1B-262AADF14D31}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmarks", "benchmarks", "{DF58F9B5-340A-4817-B8A4-3073F829FE94}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ui-tests", "ui-tests", "{05DD5399-2765-41F1-BBB8-468CFDCFFFA9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{F44D3E7B-A72E-458B-9E13-D4BAF33E4A0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C12312B5-35F9-4ECF-9E1B-262AADF14D31} = {04B9822D-2764-4049-9689-654DD0ECBA30}
+		{DF58F9B5-340A-4817-B8A4-3073F829FE94} = {04B9822D-2764-4049-9689-654DD0ECBA30}
+		{05DD5399-2765-41F1-BBB8-468CFDCFFFA9} = {04B9822D-2764-4049-9689-654DD0ECBA30}
+		{F44D3E7B-A72E-458B-9E13-D4BAF33E4A0B} = {04B9822D-2764-4049-9689-654DD0ECBA30}
+	EndGlobalSection
+EndGlobal
