@@ -27,6 +27,18 @@ if (DirectoryExists ("./Content/tools/"))
 
 }
 
+CakeExecuteScript
+(
+	"./Content/build.cake",
+	new CakeSettings
+	{
+		Arguments = new Dictionary<string, string> 
+						{
+							{"target", "clean"},
+						}
+	}
+);
+
 DateTime dt = DateTime.Now;
 
 FilePath file = GetFiles ($"./*.nuspec").ToList () [0];	
