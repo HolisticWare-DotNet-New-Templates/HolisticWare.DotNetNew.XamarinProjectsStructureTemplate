@@ -48,6 +48,19 @@
       <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
       <Private>False</Private>
     </ProjectReference>
+    <ProjectReference Include="..\..\source\XamarinProjectsStructureTemplate.Bindings.netstandard10\XamarinProjectsStructureTemplate.Bindings.netstandard10.csproj">
+      <Project>{C2DC201B-4D37-4490-9C24-43CE1DF3DC12}</Project>
+      <Name>XamarinProjectsStructureTemplate.Bindings.netstandard10</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\source\XamarinProjectsStructureTemplate.netstandard10\XamarinProjectsStructureTemplate.netstandard10.csproj">
+      <Project>{FF976658-DBE9-42B8-9751-C8CC0AAF7778}</Project>
+      <Name>XamarinProjectsStructureTemplate.netstandard10</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank\XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.csproj">
+      <Project>{A47A089F-AA72-44E5-8A58-258DF4A8F6FE}</Project>
+      <Name>XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank</Name>
+    </ProjectReference>
   </ItemGroup>
+  <Import Project="..\..\source\XamarinProjectsStructureTemplate.Shared\XamarinProjectsStructureTemplate.Shared.projitems" Label="Shared" Condition="Exists('..\..\source\XamarinProjectsStructureTemplate.Shared\XamarinProjectsStructureTemplate.Shared.projitems')" />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -91,6 +91,27 @@
       <Project>{A47A089F-AA72-44E5-8A58-258DF4A8F6FE}</Project>
       <Name>XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\source\XamarinProjectsStructureTemplate.Bindings.netstandard10\XamarinProjectsStructureTemplate.Bindings.netstandard10.csproj">
+      <Project>{C2DC201B-4D37-4490-9C24-43CE1DF3DC12}</Project>
+      <Name>XamarinProjectsStructureTemplate.Bindings.netstandard10</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\source\XamarinProjectsStructureTemplate.Bindings.XamarinAndroid\XamarinProjectsStructureTemplate.Bindings.XamarinAndroid.csproj">
+      <Project>{0AB4836A-2A9F-4755-A0AC-4A86BB6CB36E}</Project>
+      <Name>XamarinProjectsStructureTemplate.Bindings.XamarinAndroid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\source\XamarinProjectsStructureTemplate.Bindings.XamarinAndroid.OldNonSDKStyle\XamarinProjectsStructureTemplate.Bindings.XamarinAndroid.OldNonSDKStyle.csproj">
+      <Project>{837AE01F-CBB8-4B5A-8766-361787779B9E}</Project>
+      <Name>XamarinProjectsStructureTemplate.Bindings.XamarinAndroid.OldNonSDKStyle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\source\XamarinProjectsStructureTemplate.netstandard10\XamarinProjectsStructureTemplate.netstandard10.csproj">
+      <Project>{FF976658-DBE9-42B8-9751-C8CC0AAF7778}</Project>
+      <Name>XamarinProjectsStructureTemplate.netstandard10</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\source\XamarinProjectsStructureTemplate.XamarinAndroid\XamarinProjectsStructureTemplate.XamarinAndroid.csproj">
+      <Project>{BF701D87-B10A-40DB-B5FE-B4DA1B67139C}</Project>
+      <Name>XamarinProjectsStructureTemplate.XamarinAndroid</Name>
+    </ProjectReference>
   </ItemGroup>
+  <Import Project="..\..\source\XamarinProjectsStructureTemplate.Shared\XamarinProjectsStructureTemplate.Shared.projitems" Label="Shared" Condition="Exists('..\..\source\XamarinProjectsStructureTemplate.Shared\XamarinProjectsStructureTemplate.Shared.projitems')" />
  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

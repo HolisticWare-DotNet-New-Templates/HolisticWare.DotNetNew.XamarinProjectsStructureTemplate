@@ -13,6 +13,20 @@ FilePathCollection files = null;
 files = GetFiles("./*.nupkg");
 DeleteFiles(files);
 
+if (DirectoryExists ("./Content/tools/"))
+{
+	DeleteDirectory
+				(
+					"./Content/tools/",
+					new DeleteDirectorySettings
+					{
+						Recursive = true,
+						Force = true
+					}
+				);
+
+}
+
 DateTime dt = DateTime.Now;
 
 FilePath file = GetFiles ($"./*.nuspec").ToList () [0];	

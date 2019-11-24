@@ -14,4 +14,9 @@
     <PackageReference Include="Xamarin.Forms" Version="4.3.0.908675" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\source\XamarinProjectsStructureTemplate.Bindings.netstandard10\XamarinProjectsStructureTemplate.Bindings.netstandard10.csproj" />
+    <ProjectReference Include="..\..\source\XamarinProjectsStructureTemplate.netstandard10\XamarinProjectsStructureTemplate.netstandard10.csproj" />
+  </ItemGroup>
+  <Import Project="..\..\source\XamarinProjectsStructureTemplate.Shared\XamarinProjectsStructureTemplate.Shared.projitems" Label="Shared" Condition="Exists('..\..\source\XamarinProjectsStructureTemplate.Shared\XamarinProjectsStructureTemplate.Shared.projitems')" />
 </Project>

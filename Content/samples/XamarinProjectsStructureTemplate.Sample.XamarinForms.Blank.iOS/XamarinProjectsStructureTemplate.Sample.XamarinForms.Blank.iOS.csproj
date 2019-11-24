@@ -131,6 +131,15 @@
       <Project>{A47A089F-AA72-44E5-8A58-258DF4A8F6FE}</Project>
       <Name>XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\source\XamarinProjectsStructureTemplate.Bindings.XamarinIOS\XamarinProjectsStructureTemplate.Bindings.XamarinIOS.csproj">
+      <Project>{FFBF2486-846B-447B-9741-AC0A7EE1746F}</Project>
+      <Name>XamarinProjectsStructureTemplate.Bindings.XamarinIOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\source\XamarinProjectsStructureTemplate.XamarinIOS\XamarinProjectsStructureTemplate.XamarinIOS.csproj">
+      <Project>{0FA4E7C0-318F-4515-AFA4-613FF3A296CB}</Project>
+      <Name>XamarinProjectsStructureTemplate.XamarinIOS</Name>
+    </ProjectReference>
   </ItemGroup>
+  <Import Project="..\..\source\XamarinProjectsStructureTemplate.Shared\XamarinProjectsStructureTemplate.Shared.projitems" Label="Shared" Condition="Exists('..\..\source\XamarinProjectsStructureTemplate.Shared\XamarinProjectsStructureTemplate.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

@@ -22,14 +22,13 @@
     <projectUrl>
       https://github.com/holisticware-xamarin/HolisticWare.DotNetNew.XamarinProjectsStructureTemplate
     </projectUrl>
-    <license type="file">LICENSE.md</license>
+    <license type="expression">MIT</license>
     <packageTypes>
       <packageType name="Template" />
     </packageTypes>
   </metadata>
-  <files>
-    <file src="Content\docs\HolisticWare.svg.png" target="docs\" />
-    <file src="LICENSE.md" target="" />
-  </files>
+    <files>
+        <file src="content/**" target="" />
+    </files>
 
 </package>
