@@ -138,6 +138,8 @@
     <ProjectReference Include="..\..\source\XamarinProjectsStructureTemplate.XamarinIOS\XamarinProjectsStructureTemplate.XamarinIOS.csproj">
       <Project>{0FA4E7C0-318F-4515-AFA4-613FF3A296CB}</Project>
       <Name>XamarinProjectsStructureTemplate.XamarinIOS</Name>
+      <IsAppExtension>false</IsAppExtension>
+      <IsWatchApp>false</IsWatchApp>
     </ProjectReference>
   </ItemGroup>
   <Import Project="..\..\source\XamarinProjectsStructureTemplate.Shared\XamarinProjectsStructureTemplate.Shared.projitems" Label="Shared" Condition="Exists('..\..\source\XamarinProjectsStructureTemplate.Shared\XamarinProjectsStructureTemplate.Shared.projitems')" />

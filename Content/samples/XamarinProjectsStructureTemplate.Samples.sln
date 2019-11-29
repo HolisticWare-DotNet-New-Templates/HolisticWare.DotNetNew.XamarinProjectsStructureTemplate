@@ -45,7 +45,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.UITests", "XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.UITests\XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.UITests.csproj", "{A84940C1-CD4A-4862-ABC9-A857D6FEC04C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank", "XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank\XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.csproj", "{A47A089F-AA72-44E5-8A58-258DF4A8F6FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank", "XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank\XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.csproj", "{A47A089F-AA72-44E5-8A58-258DF4A8F6FE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.XamarinMac", "XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.XamarinMac\XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.XamarinMac.csproj", "{9724C9F7-F0D1-4506-833A-C68ACE0D2FA8}"
 EndProject
@@ -53,6 +53,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTem
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\source\XamarinProjectsStructureTemplate.Shared\XamarinProjectsStructureTemplate.Shared.projitems*{3933d804-ff9a-4d1c-82af-468004bd8f9b}*SharedItemsImports = 4
+		..\source\XamarinProjectsStructureTemplate.Shared\XamarinProjectsStructureTemplate.Shared.projitems*{9724c9f7-f0d1-4506-833a-c68ace0d2fa8}*SharedItemsImports = 4
+		..\source\XamarinProjectsStructureTemplate.Shared\XamarinProjectsStructureTemplate.Shared.projitems*{a84940c1-cd4a-4862-abc9-a857d6fec04c}*SharedItemsImports = 4
+		..\source\XamarinProjectsStructureTemplate.Shared\XamarinProjectsStructureTemplate.Shared.projitems*{df679b52-7b9c-4b0b-a5a2-8c6dafc8d1a0}*SharedItemsImports = 4
+		..\source\XamarinProjectsStructureTemplate.Shared\XamarinProjectsStructureTemplate.Shared.projitems*{e949dabc-3505-4311-990b-3144b2529063}*SharedItemsImports = 4
 		..\source\XamarinProjectsStructureTemplate.Shared\XamarinProjectsStructureTemplate.Shared.projitems*{fed5275d-b937-4065-9a08-c17b2d704a14}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
