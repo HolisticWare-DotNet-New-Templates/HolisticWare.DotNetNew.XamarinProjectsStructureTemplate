@@ -6,8 +6,14 @@
     <TargetFrameworks>MonoAndroid90</TargetFrameworks>
     <IsBindingProject>true</IsBindingProject>
     <AndroidClassParser>class-parse</AndroidClassParser>
-
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
+    <EnableProguard>true</EnableProguard>
+    <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+    <AndroidDexTool>d8</AndroidDexTool>
+    <AndroidLinkTool>r8</AndroidLinkTool>
+        
+        
     <RootNamespace>XamarinProjectsStructureTemplate.Bindings</RootNamespace>
 
     <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
