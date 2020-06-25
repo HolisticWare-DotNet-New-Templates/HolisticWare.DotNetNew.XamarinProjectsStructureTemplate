@@ -5,6 +5,14 @@
     <RootNamespace>XamarinProjectsStructureTemplate.Bindings</RootNamespace>
     <AssemblyName>XamarinProjectsStructureTemplate.Bindings</AssemblyName>
     <DefaultItemExcludes>$(DefaultItemExcludes);.DS_Store</DefaultItemExcludes>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
 
 </Project>
