@@ -39,25 +39,25 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.XamarinTvOS", "..\source\XamarinProjectsStructureTemplate.XamarinTvOS\XamarinProjectsStructureTemplate.XamarinTvOS.csproj", "{CC114FA6-463A-4E0B-89FF-85755403096F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.Android", "XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.Android\XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.Android.csproj", "{DF679B52-7B9C-4B0B-A5A2-8C6DAFC8D1A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.Android", "mobile\XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.Android\XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.Android.csproj", "{DF679B52-7B9C-4B0B-A5A2-8C6DAFC8D1A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.iOS", "XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.iOS\XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.iOS.csproj", "{E949DABC-3505-4311-990B-3144B2529063}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.iOS", "mobile\XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.iOS\XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.iOS.csproj", "{E949DABC-3505-4311-990B-3144B2529063}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.UITests", "XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.UITests\XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.UITests.csproj", "{A84940C1-CD4A-4862-ABC9-A857D6FEC04C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank", "XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank\XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.csproj", "{A47A089F-AA72-44E5-8A58-258DF4A8F6FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.XamarinMac", "XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.XamarinMac\XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.XamarinMac.csproj", "{9724C9F7-F0D1-4506-833A-C68ACE0D2FA8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.XamarinMac", "desktop\XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.XamarinMac\XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.XamarinMac.csproj", "{9724C9F7-F0D1-4506-833A-C68ACE0D2FA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.GTK", "XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.GTK\XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.GTK.csproj", "{3933D804-FF9A-4D1C-82AF-468004BD8F9B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.GTK", "desktop\XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.GTK\XamarinProjectsStructureTemplate.Sample.XamarinForms.Blank.GTK.csproj", "{3933D804-FF9A-4D1C-82AF-468004BD8F9B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mobile", "mobile", "{CEA03B6A-2F60-4764-B0A3-1EF0307B82B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "desktop", "desktop", "{8F0903F6-BA83-41BD-B376-17FB5F449F3E}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		..\source\XamarinProjectsStructureTemplate.Shared\XamarinProjectsStructureTemplate.Shared.projitems*{3933d804-ff9a-4d1c-82af-468004bd8f9b}*SharedItemsImports = 4
-		..\source\XamarinProjectsStructureTemplate.Shared\XamarinProjectsStructureTemplate.Shared.projitems*{9724c9f7-f0d1-4506-833a-c68ace0d2fa8}*SharedItemsImports = 4
 		..\source\XamarinProjectsStructureTemplate.Shared\XamarinProjectsStructureTemplate.Shared.projitems*{a84940c1-cd4a-4862-abc9-a857d6fec04c}*SharedItemsImports = 4
-		..\source\XamarinProjectsStructureTemplate.Shared\XamarinProjectsStructureTemplate.Shared.projitems*{df679b52-7b9c-4b0b-a5a2-8c6dafc8d1a0}*SharedItemsImports = 4
-		..\source\XamarinProjectsStructureTemplate.Shared\XamarinProjectsStructureTemplate.Shared.projitems*{e949dabc-3505-4311-990b-3144b2529063}*SharedItemsImports = 4
 		..\source\XamarinProjectsStructureTemplate.Shared\XamarinProjectsStructureTemplate.Shared.projitems*{fed5275d-b937-4065-9a08-c17b2d704a14}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -306,6 +306,10 @@ Global
 		{9C25E019-B691-4177-9AC0-F47F555923F0} = {6DDE45B4-1260-444B-A03D-C87591099A65}
 		{141F6ABC-24B3-4922-8568-E5C3C4E0798F} = {6DDE45B4-1260-444B-A03D-C87591099A65}
 		{CC114FA6-463A-4E0B-89FF-85755403096F} = {6DDE45B4-1260-444B-A03D-C87591099A65}
+		{DF679B52-7B9C-4B0B-A5A2-8C6DAFC8D1A0} = {CEA03B6A-2F60-4764-B0A3-1EF0307B82B0}
+		{E949DABC-3505-4311-990B-3144B2529063} = {CEA03B6A-2F60-4764-B0A3-1EF0307B82B0}
+		{9724C9F7-F0D1-4506-833A-C68ACE0D2FA8} = {8F0903F6-BA83-41BD-B376-17FB5F449F3E}
+		{3933D804-FF9A-4D1C-82AF-468004BD8F9B} = {8F0903F6-BA83-41BD-B376-17FB5F449F3E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8B2E503E-CD79-4B5D-9394-ECE43B0E6CAE}
