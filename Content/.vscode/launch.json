@@ -1,0 +1,11 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch",
+            "type": "xamarin",
+            "request": "launch",
+            "packageName": "com.xamarin.debugexample.x_a_debug"
+        }
+    ]
+}

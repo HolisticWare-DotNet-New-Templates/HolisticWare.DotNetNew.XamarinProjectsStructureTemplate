@@ -1,21 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="MSBuild.Sdk.Extras/2.0.54">
   <PropertyGroup>
 
-    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
-    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
-    <AndroidUseIntermediateDesignerFile>True</AndroidUseIntermediateDesignerFile>
-    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
-
-    <TargetFrameworks>MonoAndroid81</TargetFrameworks>
-    <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
-    <RootNamespace>XamarinProjectsStructureTemplate.Bindings</RootNamespace>
-  </PropertyGroup>
-
-  <PropertyGroup>
+    <TargetFramework>MonoAndroid90</TargetFramework>
+    <TargetFrameworks>MonoAndroid90</TargetFrameworks>
     <IsBindingProject>true</IsBindingProject>
     <AndroidClassParser>class-parse</AndroidClassParser>
+    <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
+    <EnableProguard>true</EnableProguard>
+    <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+    <AndroidDexTool>d8</AndroidDexTool>
+    <AndroidLinkTool>r8</AndroidLinkTool>
+        
+        
+    <RootNamespace>XamarinProjectsStructureTemplate.Bindings</RootNamespace>
+
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AndroidUseIntermediateDesignerFile>True</AndroidUseIntermediateDesignerFile>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+
   </PropertyGroup>
+
 
   <PropertyGroup>
     <PackageId>HolisticWare.XamarinProjectsStructureTemplate.Bindings</PackageId>
