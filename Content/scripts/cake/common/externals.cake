@@ -2,9 +2,47 @@
 #load "./../common/nuget-restore.cake"
 
 //---------------------------------------------------------------------------------------
+Task("externals-git-clone")
+    .Does
+    (
+        () => 
+        {
+            FilePathCollection cakes = GetFiles($"../../data/git-clone/cake/**/*.cake");
+            foreach (FilePath cake in cakes)
+            {
+                Information($"  processing cake script: {cake.ToString()}");
+            }
+
+            return;
+        }
+    );
+
+Task("externals-download")
+    .Does
+    (
+        () => 
+        {
+            FilePathCollection cakes = GetFiles($"../../data/download/cake/**/*.cake");
+            foreach (FilePath cake in cakes)
+            {
+                Information($"  processing cake script: {cake.ToString()}");
+            }
+
+            return;
+        }
+    );
+
+bool ExternalsConditions()
+{
+    bool condition = !FileExists ("./externals/HolisticWare.Core.Math.Statistics.aar");
+
+    return condition;
+}
+
 Task ("externals")
-    //.IsDependentOn ("externals-base")
-    // .WithCriteria (!FileExists ("./externals/HolisticWare.Core.Math.Statistics.aar"))
+    .IsDependentOn ("externals-git-clone")
+    .IsDependentOn ("externals-download")
+    .WithCriteria (ExternalsConditions())
     .Does
     (
         () =>
@@ -47,8 +85,7 @@ Task ("externals")
         }
     );
 
-Task("externals-build")
-    .IsDependentOn ("nuget-restore")
+Task("externals-nuget-restore")
     .Does
     (
         () =>
@@ -66,7 +103,35 @@ Task("externals-build")
                             Arguments = new Dictionary<string, string>()
                             {
                                 //{"verbosity",   "diagnostic"},
-                                {"target",      "libs"},
+                                {"target",      "nuget-restore"},
+                            },
+                        }
+                    );
+            }
+
+            return;
+        }
+    );
+Task("externals-build")
+    .IsDependentOn ("externals-nuget-restore")
+    .Does
+    (
+        () =>
+        {
+            FilePathCollection files = GetFiles("./external*/**/build.cake");
+            foreach(FilePath file in files)
+            {
+                Information("File: {0}", file);
+                CakeExecuteScript
+                    (
+                        file,
+                        new CakeSettings
+                        {
+                            Verbosity = Verbosity.Diagnostic,
+                            Arguments = new Dictionary<string, string>()
+                            {
+                                //{"verbosity",   "diagnostic"},
+                                {"target",      "nuget"},
                             },
                         }
                     );
