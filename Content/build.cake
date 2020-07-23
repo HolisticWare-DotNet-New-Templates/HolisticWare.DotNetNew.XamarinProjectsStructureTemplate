@@ -4,81 +4,17 @@ Installing
 
 dotnet tool Cake
 
-    dotnet tool install -g Cake.Tool
+    dotnet tool uninstall --global Cake.Tool
+    dotnet tool install --global Cake.Tool
 
-Vannila Cake
-
-    Windows - powershell
-
-        Invoke-WebRequest http://cakebuild.net/download/bootstrapper/windows -OutFile build.ps1
-        .\build.ps1
-
-        Get-ExecutionPolicy -List
-        Set-ExecutionPolicy RemoteSigned -Scope Process
-        Unblock-File .\build.ps1
-
-    Windows - cmd.exe prompt
-
-        powershell ^
-            Invoke-WebRequest http://cakebuild.net/download/bootstrapper/windows -OutFile build.ps1
-        powershell ^
-            .\build.ps1
-
-    Mac OSX
-
-        rm -fr tools/; mkdir ./tools/ ; \
-        cp cake.packages.config ./tools/packages.config ; \
-        curl -Lsfo build.sh http://cakebuild.net/download/bootstrapper/osx ; \
-        sh ./build.sh
-
-        chmod +x ./build.sh ;
-        ./build.sh
-
-    Linux
-
-        curl -Lsfo build.sh http://cakebuild.net/download/bootstrapper/linux
-        chmod +x ./build.sh && ./build.sh
-
-Running Cake to Build targets
-
-    Windows
-
-        tools\Cake\Cake.exe --verbosity=diagnostic --target=libs
-        tools\Cake\Cake.exe --verbosity=diagnostic --target=nuget
-        tools\Cake\Cake.exe --verbosity=diagnostic --target=samples
-
-
-    Mac OSX
-
-        mono tools/Cake/Cake.exe --verbosity=diagnostic --target=libs
-        mono tools/Cake/Cake.exe --verbosity=diagnostic --target=nuget
-
-        mono tools/nunit.consolerunner/NUnit.ConsoleRunner/tools/nunit3-console.exe \
-
-
-
-
+scripts/cake/common/install.cake
 #########################################################################################
 */
-#addin nuget:?package=Cake.FileHelpers
-
 
 //---------------------------------------------------------------------------------------
-// unit testing
-#tool nuget:?package=NUnit.ConsoleRunner&version=3.9.0
-#tool nuget:?package=xunit.runner.console
-//---------------------------------------------------------------------------------------
-// coverage
-#tool "nuget:?package=OpenCover"
-// dotCover is commercial
-// #tool "nuget:?package=JetBrains.dotCover.CommandLineTools"
-//---------------------------------------------------------------------------------------
-// reporting
-#tool "nuget:?package=ReportUnit"
-#tool "nuget:?package=ReportGenerator"
+// Default target ("ci", "libs", ...)
+string TARGET = Argument ("t", Argument ("target", "Default"));
 
-//---------------------------------------------------------------------------------------
-var TARGET = Argument ("t", Argument ("target", "Default"));
 
 string[] directories_to_clean = new string[]
 {
@@ -108,7 +44,10 @@ string[] files_to_clean = new string[]
 
 string[] targets_to_run = new string[]
 {
-    // "externals",
+    "externals",
+    "externals-build",
+    "externals-git-clone",
+    "externals-download",
     "libs",
     "samples",
     "nuget",
@@ -118,32 +57,28 @@ string[] targets_to_run = new string[]
 };
 
 string NUGET_VERSION="0.0.0.0";
-//.....................................................................
+//---------------------------------------------------------------------------------------
 // source (library)
 string source_solutions = $"./source/**/*Source.sln";
 string source_projects = $"./source/**/*.csproj";
 
 FilePathCollection SourceLibSolutions = GetFiles(source_solutions);
 FilePathCollection SourceLibProjects  = GetFiles(source_projects);
-//.....................................................................
+//---------------------------------------------------------------------------------------
 
-//.....................................................................
+//---------------------------------------------------------------------------------------
 string samples_solutions = $"./samples/**/*Sample*.sln";
 string samples_projects  = $"./samples/**/*.csproj";
 
 FilePathCollection SamplesSolutions = GetFiles(samples_solutions);
 FilePathCollection SamplesProjects  = GetFiles(samples_projects);
-//.....................................................................
+//---------------------------------------------------------------------------------------
 
-#load "./scripts/cake/common/externals.cake"
-#load "./scripts/cake/private-protected-sensitive/externals.private.cake"
-#load "./scripts/cake/common/main.cake"
-#load "./scripts/cake/common/nuget-restore.cake"
-#load "./scripts/cake/common/libs.cake"
-#load "./scripts/cake/common/samples.cake"
-#load "./scripts/cake/common/nuget-pack.cake"
-#load "./scripts/cake/common/tests-unit-tests.cake"
-#load "./scripts/cake/common/tests-benchmarks.cake"
+
+//---------------------------------------------------------------------------------------
+// DO NOT CHANGE
+#load "./scripts/cake/build.cake"
+//---------------------------------------------------------------------------------------
 
 
 // FilePathCollection UnitTestsNUnitMobileProjects = GetFiles($"./tests/unit-tests/project-references/**/*.NUnit.Xamarin*.csproj");
@@ -158,7 +93,7 @@ Task("Default")
         {
             foreach(string target_to_run in targets_to_run)
             {
-                RunTarget($"target_to_run");
+                RunTarget($"{target_to_run}");
             }
         }
     );
