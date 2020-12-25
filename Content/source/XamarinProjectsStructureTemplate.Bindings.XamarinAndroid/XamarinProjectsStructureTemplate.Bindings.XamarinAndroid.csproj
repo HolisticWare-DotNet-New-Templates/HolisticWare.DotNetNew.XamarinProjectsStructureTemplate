@@ -3,7 +3,8 @@
   <PropertyGroup>
 
     <TargetFramework>MonoAndroid90</TargetFramework>
-    <TargetFrameworks>MonoAndroid90</TargetFrameworks>
+    <TargetFrameworks>monoandroid9.0;monoandroid10.0;monoandroid11.0</TargetFrameworks>
+    <WarningLevel>0</WarningLevel>
     <IsBindingProject>true</IsBindingProject>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
