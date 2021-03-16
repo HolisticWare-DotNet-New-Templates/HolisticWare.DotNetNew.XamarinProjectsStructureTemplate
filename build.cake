@@ -7,7 +7,7 @@ run this
 	dotnet cake
 */
 #addin nuget:?package=Cake.FileHelpers
-#addin "MagicChunks"
+// #addin "MagicChunks"
 
 FilePathCollection files = null;
 files = GetFiles("./*.nupkg");
@@ -27,6 +27,8 @@ if (DirectoryExists ("./Content/tools/"))
 
 }
 
+/*
+no need to test builds
 CakeExecuteScript
 (
 	"./Content/build.cake",
@@ -38,39 +40,57 @@ CakeExecuteScript
 						}
 	}
 );
+*/
 
 DateTime dt = DateTime.Now;
+string version = $"{dt.ToString("yyyy.MM.dd.HHmm")}";
 
-FilePath file = GetFiles ($"./*.nuspec").ToList () [0];	
-Information($"{FileReadText(file)}");
+FilePath file_source = GetFiles ($"./*.nuspec").ToList () [0];
+Information($"file = {file_source} : ");
+Information($"{FileReadText(file_source)}");
+FilePath file_destination = new FilePath
+(
+	file_source.FullPath.Replace
+							(
+								"HolisticWare.DotNetNew.CakeScriptDebugTemplate.CSharp",
+								$"new.tmp.{version}"
+							)
+);
+Information($"file = {file_destination} : ");
+CopyFile(file_source, file_destination);
 
-string version = $"{dt.Year}.{dt.Month}.{dt.Day}.{dt.ToString("HHmm")}";
 
 // https://github.com/xamarin/GoogleApisForiOSComponents/blob/master/update.cake
-// XmlPoke
-// (
-// 	file,
-//     "/ns:package/ns:metadata/ns:version/",
-//     version,
-//     new XmlPokeSettings 
-// 	{
-//         Namespaces = new Dictionary<string, string> 
-// 		{
-//             { "ns", "http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd" },
-//         }
-//     }
-// );
+// https://gsferreira.com/archive/2018/06/versioning-net-core-applications-using-cake/
+XmlPoke
+(
+	file_destination,
+    //"/ns:package/ns:metadata/ns:version/",
+	"//version",
+    version,
+    new XmlPokeSettings 
+	{
+        Namespaces = new Dictionary<string, string> 
+		{
+            { "ns", "http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd" },
+        }
+    }
+);
+Information($"{FileReadText(file_destination)}");
+
 
 // https://github.com/sergeyzwezdin/magic-chunks
-TransformConfig
-(
-	file.ToString(), 
-	$"new.tmp.{version}.nuspec",
-	new TransformationCollection 
-	{
-		{ "package/metadata/version", version },
-	}
-);
+// TransformConfig
+// (
+// 	file.ToString(), 
+// 	$"new.tmp.{version}.nuspec",
+// 	new TransformationCollection 
+// 	{
+// 		{ "package/metadata/version", version },
+// 	}
+// );
+
+
 
 int exit_code = StartProcess
 (
