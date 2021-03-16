@@ -27,8 +27,8 @@
       <packageType name="Template" />
     </packageTypes>
   </metadata>
-    <files>
-        <file src="content/**" target="" />
-    </files>
+  <files>
+    <file src="Content/**" target="" />
+  </files>
 
 </package>
