@@ -73,6 +73,8 @@
     "tags":
     {
         // Specify that this template is in C#.
-        "language": "C#"
+        "language": "C#",
+        // project / solution
+        "type": "project"
     }
 }
