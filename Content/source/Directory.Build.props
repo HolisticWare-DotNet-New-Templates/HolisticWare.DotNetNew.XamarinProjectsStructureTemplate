@@ -1,8 +1,5 @@
 <Project>
   <PropertyGroup>
-    <Import Project="../Directory.Build.props" />
-    <Import Project="../configs/Rules-N-Recommendations.ruleset" Condition="Exists('../configs/Rules-N-Recommendations.ruleset')" />
-
     <!--
     The MSAL.snk has both private and public keys 
     <SignAssembly>true</SignAssembly>
@@ -171,6 +168,8 @@
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
-
   </ItemGroup>
+
+    <Import Project="../Directory.Build.props" />
+    <Import Project="../configs/Rules-N-Recommendations.ruleset" Condition="Exists('../configs/Rules-N-Recommendations.ruleset')" />
 </Project>
